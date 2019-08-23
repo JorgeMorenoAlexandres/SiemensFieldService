@@ -1,4 +1,4 @@
-<div class="wrapper position-fixed">
+<div class="wrapper">
         <!-- Sidebar position-fixed  -->
         <nav id="sidebar" class="">
             <div class="sidebar-header">
@@ -29,7 +29,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/content/personal">
+                    <a href="/personal/buscar">
                         <i class="fas fa-address-book"></i>
                         <span>Personal</span>
                         <strong>Personal</strong>
@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="/certificaciones">
                         <i class="fas fa-book-open"></i>
                       <span>Certificaciones</span>
                       <strong>Cert</strong>

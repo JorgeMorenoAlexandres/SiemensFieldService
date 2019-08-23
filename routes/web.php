@@ -27,9 +27,26 @@ Route::get('/inicio', 'HomeController@index')->name('inicio');
 // PUT/PATCH		/notas/{nota}			update		notas.update
 // DELETE			/notas/{nota}			destroy		notas.destroy
 
-Route::resource('/personal', 'PersonalController');
+//Index
+Route::resource('/fieldservice', 'PersonalController');
 
-Route::get('/content/personal', 'PersonalController@mostarPersonal');
+Route::get('/personal/buscar',  'PersonalController@mostarPersonal');
+Route::post('/personal/buscar',  'PersonalController@buscarPersonalPost');
+
+Route::get('/personal/agregar', 'PersonalController@agregarPersonal');
+Route::post('/personal/agregar', 'PersonalController@agregarPersonalPost');
+
+Route::get('ajaxRequest', 'PersonalController@ajaxRequest');
+Route::post('ajaxRequest', 'PersonalController@ajaxRequestPost');
+
+Route::get('/personal/editar',  'PersonalController@editarPersonal');
+Route::get('/personal/eliminar','PersonalController@eliminarPersonal');
+
+
+// Route::post('ajaxRequest', 'PersonalController@ajaxRequestPost');
+
+
+Route::get('/certificaciones', 'PersonalController@mostarCertificaciones');
 
 Auth::routes();
 
